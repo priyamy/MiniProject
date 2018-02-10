@@ -9,11 +9,11 @@ export default class AuthScreen extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-	  	isLoggedIn : false,
-	  	usernameTextBox : '',
-	  	passwordTextBox : '',
-      	fontsAreLoaded: false,
-	  }
+      isLoggedIn : false,
+      usernameTextBox : '',
+      passwordTextBox : '',
+        fontsAreLoaded: false,
+    }
   }
 
   async componentWillMount() {
@@ -51,17 +51,17 @@ export default class AuthScreen extends React.Component {
   }
 
   handleUsernameChange = usernameTextBox => {
-  	this.setState({
-  		...this.state,
-  		usernameTextBox: usernameTextBox
-  	})
+    this.setState({
+      ...this.state,
+      usernameTextBox: usernameTextBox
+    })
   }
 
   handlePasswordChange = passwordTextBox => {
-  	this.setState({
-  		...this.state,
-  		passwordTextBox: passwordTextBox
-  	})
+    this.setState({
+      ...this.state,
+      passwordTextBox: passwordTextBox
+    })
   }
 
   handleLogout = () => {
@@ -72,7 +72,7 @@ export default class AuthScreen extends React.Component {
   }
 
   render() {
-	  if (this.state.fontsAreLoaded == true) {
+    if (this.state.fontsAreLoaded == true) {
       if(this.state.isLoggedIn === true){
         return (
             <ArticleList logoutCallback={this.handleLogout}/> 
