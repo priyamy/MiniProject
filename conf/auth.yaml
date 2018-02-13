@@ -18,13 +18,13 @@ defaultProviders:
     enabled: "true"
     defaultRoles: []
   email:
-    enabled: "false"
+    enabled: "true"
     defaultRoles: []
   mobile:
-    enabled: "false"
+    enabled: "true"
     defaultRoles: []
   mobile-password:
-    enabled: "false"
+    enabled: "true"
     defaultRoles: []
   google:
     enabled: "false"
