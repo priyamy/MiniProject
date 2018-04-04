@@ -1,7 +1,7 @@
 - alias: hasura
   config:
     configmap: controller-conf
-    namespace: hasura
+    namespace: arisen52-hasura
   data: null
   kubeContext: arisen52
   name: arisen52

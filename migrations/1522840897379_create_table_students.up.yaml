@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "students"("prn_no" text NOT NULL, "mobile" text NOT NULL, "college"
+      text NOT NULL, "branch" text NOT NULL, "year" text NOT NULL, "roll_no" text
+      NOT NULL, "name" text NOT NULL, PRIMARY KEY ("prn_no","mobile") )
+  type: run_sql
+- args:
+    name: students
+  type: add_existing_table_or_view
