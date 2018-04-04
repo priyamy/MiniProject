@@ -1,7 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css';
-import App from './App';
+import Notifier from './components/Notifier'
 //import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+render((
+  <BrowserRouter>
+    <Notifier />
+  </BrowserRouter>
+), document.getElementById('root'));
+
+
+//registerServiceWorker();
