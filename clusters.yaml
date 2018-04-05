@@ -1,7 +1,6 @@
+clusters:
 - alias: hasura
-  config:
-    configmap: controller-conf
-    namespace: arisen52-hasura
   data: null
-  kubeContext: arisen52
-  name: arisen52
+  infra:
+    provider: hasura-free
+version: v1
