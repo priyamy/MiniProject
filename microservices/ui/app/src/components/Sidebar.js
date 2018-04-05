@@ -32,7 +32,7 @@ export default class Sidebar extends React.Component {
 
   setUsers() {
 
-    const url = "https://api.astigmatic44.hasura-app.io/Users/Active_Users";
+    const url = "https://api.arisen52.hasura-app.io/Users/Active_Users";
     let requestOptions = {
       "method": "POST",
       "headers": {
@@ -82,7 +82,7 @@ export default class Sidebar extends React.Component {
 
    listItems(values) {
      return values.map((name,id) => {
-       img_url="https://filestore.astigmatic44.hasura-app.io/v1/file/"+this.state.Images[id];
+       img_url="https://filestore.arisen52.hasura-app.io/v1/file/"+this.state.Images[id];
       return (<ListItem
          key={name}
          onClick={()=>{idv = name; this.passUser();} }

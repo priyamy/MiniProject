@@ -1,0 +1,3 @@
+- args:
+    sql: ALTER TABLE "user_details" ADD COLUMN "status" text NUll DEFAULT 'na'
+  type: run_sql

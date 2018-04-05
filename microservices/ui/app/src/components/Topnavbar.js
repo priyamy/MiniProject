@@ -14,8 +14,8 @@ const style = {
 };
 
 let wmsg="";
-let url = "https://auth.astigmatic44.hasura-app.io/v1/user/logout";
-let usr = "https://auth.astigmatic44.hasura-app.io/v1/user/info";
+let url = "https://auth.arisen52.hasura-app.io/v1/user/logout";
+let usr = "https://auth.arisen52.hasura-app.io/v1/user/info";
 let authToken = window.localStorage.getItem('HASURA_AUTH_TOKEN');
 let headers = { "Authorization" : "Bearer " + authToken }
 let requestOptions = {
@@ -40,7 +40,7 @@ export default class Topnavbar extends React.Component {
 
   sendSessionID = (sessionid,username) => {
 
-  var urlq = "https://data.astigmatic44.hasura-app.io/v1/query";
+  var urlq = "https://data.arisen52.hasura-app.io/v1/query";
   var requestOptions = {
      "method": "POST",
      "headers": {"Content-Type": "application/json",
@@ -82,7 +82,7 @@ componentDidMount() {
   handleChange = (event, index, value) => this.setState({value});
 
   deleteSessionID = (username) => {
-  const urlq = "https://data.astigmatic44.hasura-app.io/v1/query";
+  const urlq = "https://data.arisen52.hasura-app.io/v1/query";
   var requestOptions = {
      "method": "POST",
      "headers": {"Content-Type": "application/json"}};
@@ -131,7 +131,7 @@ componentDidMount() {
 
 
   getUserPic=(auth,username)=>{
-const url = "https://data.astigmatic44.hasura-app.io/v1/query";
+const url = "https://data.arisen52.hasura-app.io/v1/query";
 const requestOptions = {
     "method": "POST",
     "headers": {"Content-Type": "application/json",
@@ -147,7 +147,7 @@ fetch(url, requestOptions)
 	return response.json();
 })
 .then((result)=> {
-  this.setState({imgsrc:"https://filestore.astigmatic44.hasura-app.io/v1/file/"+result[0].Pic_Id});
+  this.setState({imgsrc:"https://filestore.arisen52.hasura-app.io/v1/file/"+result[0].Pic_Id});
 })
 .catch((error)=> {
   console.log('Request Failed:' + error);

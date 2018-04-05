@@ -23,7 +23,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 //const notify = <Notify />;
 //const clear = <Delete />;
 
-let url = "https://data.astigmatic44.hasura-app.io/v1/query";
+let url = "https://data.arisen52.hasura-app.io/v1/query";
 let authToken = window.localStorage.getItem('HASURA_AUTH_TOKEN');
 let requestOptions = {
     "method": "POST",
@@ -32,7 +32,7 @@ let requestOptions = {
         "Authorization": "Bearer " + authToken,
     }
 };
-let urlX = "https://auth.astigmatic44.hasura-app.io/v1/user/info";
+let urlX = "https://auth.arisen52.hasura-app.io/v1/user/info";
 let requestOptionsX = {
     "method": "GET",
     "headers": {

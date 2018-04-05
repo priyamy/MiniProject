@@ -29,11 +29,11 @@ const instyle = {
   height: 490,
   width: 490,
   margin: 5,};
- let url = "https://filestore.astigmatic44.hasura-app.io/v1/file";
+ let url = "https://filestore.arisen52.hasura-app.io/v1/file";
 let authToken = window.localStorage.getItem('HASURA_AUTH_TOKEN');
 //let headers = { "Authorization" : "Bearer " + authToken }
 let requestOptions = {};
-const urq = "https://data.astigmatic44.hasura-app.io/v1/query";
+const urq = "https://data.arisen52.hasura-app.io/v1/query";
 
 const requestOptionsQ = {  "method": "POST",
     "headers": {"Content-Type": "application/json",

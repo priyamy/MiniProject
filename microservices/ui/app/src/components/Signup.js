@@ -16,12 +16,12 @@ const style = {
 };
 
 
-const url = "https://auth.astigmatic44.hasura-app.io/v1/signup";
+const url = "https://auth.arisen52.hasura-app.io/v1/signup";
 let user='',passwd='',Fname='',Lname='',Email='',Phn='';
 const requestOptions = {
     "method": "POST",
     "headers": {
-        "Content-Type": "application/x-www-form-urlencoded"
+        "Content-Type": "application/json"
     },
 
 };
@@ -57,7 +57,7 @@ const requestOptions = {
 
    sendUserInfo = (auth,hid,user,passwd,Fname,Lname,Email,Phn) => {
 
-   var urlq = "https://data.astigmatic44.hasura-app.io/v1/query";
+   var urlq = "https://data.arisen52.hasura-app.io/v1/query";
    var requestOptionsQ = {
       "method": "POST",
       "headers": {"Content-Type": "application/json",
@@ -163,7 +163,7 @@ const requestOptions = {
           /> <br/>
           <TextField name="pwd" type="password"
                  hintText="Password"
-                 floatingLabelText="A Password to Login"
+                 floatingLabelText="Min 8 Characters"
                  value={this.state.pwd}
                  onChange={e =>this.change(e)}
           /><br/>
@@ -181,7 +181,7 @@ const requestOptions = {
                  onChange={e =>this.change(e)}
           /><br/>
           <br/>
-          <RaisedButton onClick={(e)=>this.onSubmit(e)} label="SIGNUP" secondary={true} />
+          <RaisedButton onClick={(e)=>{(this.state.uname && this.state.pwd)?this.onSubmit(e):alert('Username / Password missing')}} label="SIGNUP" secondary={true} />
           <FlatButton label=" " disabled={true}/>
           <Link to='/'><RaisedButton label="Login" primary={true} /></Link>
           </form>

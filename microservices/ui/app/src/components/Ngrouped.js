@@ -50,9 +50,9 @@ setUserInfo = (user) =>{username = user;}
 sendTokenToServer  = (tokens) => {
 
   console.log(username,tokens);
-  url = "https://api.astigmatic44.hasura-app.io/Users/Device_ID/Update";
+  url = "https://api.arisen52.hasura-app.io/Users/Device_ID/Update";
   requestOptions = { "method": "POST",
-      "headers": {"Content-Type": "application/x-www-form-urlencoded"}};
+      "headers": {"Content-Type": "application/json"}};
    body = {"User_Id": username,
       "Device_Id": tokens};
 
@@ -78,7 +78,7 @@ handlenotif=(user,title,message)=>  //get user to send notification
 }
 
 sendNotif =(fromN,toN,titleN,messageN)=> {
-  const url = "https://api.astigmatic44.hasura-app.io/auth/Send_Notification";
+  const url = "https://api.arisen52.hasura-app.io/auth/Send_Notification";
   requestOptions = {
       "method": "POST",
       "headers": {"Content-Type": "application/json"}};
@@ -112,23 +112,8 @@ checkLoggedIn=()=> {
       alert ("Not logged in !! Please login first");}}
 
 render(){
-  this.checkLoggedIn();
-return(
-  <div>
-    <Paper style={style} zDepth={5} rounded={true} >
-    <Topnavbar getUserInfo={this.setUserInfo}/>
-    <NotifDisplay/>
-    <Snackbar
-           open={this.state.snack}
-           message={this.state.snackmsg}
-           autoHideDuration={5000}
-         />
-    <ActionsBar passnotif={this.handlenotif}/>
-    <Ntable data={this.state.table}/>
-
-    </Paper>
-  </div>
-     );
-   }
+  return(
+  <h1>Table will appear here</h1>
+   );}
 }
 // sendfcmtoken={this.sendToken}

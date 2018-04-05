@@ -21,7 +21,7 @@ export default class ComposeNew extends React.Component {
 
 setUsers() {
    let authToken = window.localStorage.getItem('HASURA_AUTH_TOKEN');
-  const url = "https://data.astigmatic44.hasura-app.io/v1/query";
+  const url = "https://data.arisen52.hasura-app.io/v1/query";
   let requestOptions = {
       "method": "POST",
       "headers": {

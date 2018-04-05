@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "students" ALTER COLUMN "in" TYPE timetz;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "students" ALTER COLUMN "in" DROP DEFAULT;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "students" ALTER COLUMN "in" SET NOT NULL;
+  type: run_sql

@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "students" ALTER COLUMN "college" TYPE text;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "students" ALTER COLUMN "college" DROP DEFAULT;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "students" ALTER COLUMN "college" DROP NOT NULL;
+  type: run_sql

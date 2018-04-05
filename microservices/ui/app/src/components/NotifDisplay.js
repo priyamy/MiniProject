@@ -8,7 +8,7 @@ const style = {
  textAlign: 'left',
 };
 
-let url = "https://auth.astigmatic44.hasura-app.io/v1/user/info";
+let url = "https://auth.arisen52.hasura-app.io/v1/user/info";
 let authToken = window.localStorage.getItem('HASURA_AUTH_TOKEN');
 let headers = { "Authorization" : "Bearer " + authToken }
 let requestOptions = {
@@ -44,7 +44,7 @@ export default class NotifDisplay extends React.Component {
 
 
 sendToken = (currentToken) => {
-const urq = "https://data.astigmatic44.hasura-app.io/v1/query";
+const urq = "https://data.arisen52.hasura-app.io/v1/query";
 let requestOptionsQ = {  "method": "POST",
     "headers": {"Content-Type": "application/json",
                 "Authorization": "Bearer " + authToken}};

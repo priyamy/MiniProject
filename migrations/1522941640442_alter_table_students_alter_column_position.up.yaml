@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "students" ALTER COLUMN "position" TYPE json;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "students" ALTER COLUMN "position" DROP DEFAULT;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "students" ALTER COLUMN "position" DROP NOT NULL;
+  type: run_sql

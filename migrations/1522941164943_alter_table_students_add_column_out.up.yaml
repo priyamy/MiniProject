@@ -1,0 +1,3 @@
+- args:
+    sql: ALTER TABLE "students" ADD COLUMN "out" timetz NUll
+  type: run_sql
